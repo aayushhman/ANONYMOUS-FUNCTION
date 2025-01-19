@@ -10,6 +10,13 @@ namespace ANONYMOUS_FUNCTION
     {
         static void Main(string[] args)
         {
+            mydelegate obj = delegate (int a)
+             {
+                 a += 10;
+                 Console.WriteLine(a);
+             };
+            obj.Invoke(5);
+            Console.ReadLine();
         }
     }
 }
