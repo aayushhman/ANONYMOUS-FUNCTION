@@ -11,5 +11,10 @@ namespace ANONYMOUS_FUNCTION
 
     class  program
     {
+        public static void MyMethod(mydelegate del, int a)
+        {
+            a += 10;
+            del.Invoke(a);
+        }
     }
 }
